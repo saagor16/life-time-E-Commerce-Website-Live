@@ -2,4 +2,16 @@
 
 body{
     font-family: "Lato", sans-serif;
+    font-size: 14px;
 }
+.bg-blue{background: #233a95; }
+
+.headerWrapper .top-strip{
+    padding: 8px 0px;
+}
+.headerWrapper .top-strip p{
+   color: #fff;
+   font-size: 12px;
+   font-weight: 700;
+}
+
