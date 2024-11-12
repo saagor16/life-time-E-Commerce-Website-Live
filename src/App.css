@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body{
+body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
 }
-.bg-blue{background: #233a95; }
-
-.headerWrapper .top-strip{
-    padding: 8px 0px;
+.bg-blue {
+    background: #233a95;
 }
-.headerWrapper .top-strip p{
-   color: #fff;
-   font-size: 12px;
-   font-weight: 700;
+
+.headerWrapper .top-strip {
+    padding: 8px 0px;
+    background-color: #4a4cb2; /* Subtle blue tone for top strip */
+}
+.headerWrapper .top-strip p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .headerWrapper .header {
@@ -21,77 +24,74 @@ body{
     padding: 15px 0px;
 }
 
-.logoWrapper img{
-    width: 100%;
+.logoWrapper img {
+    width: 80%; /* Slightly smaller for better spacing */
 }
 
-.headerWrapper .header .part2 .countryDrop{
+.headerWrapper .header .part2 .countryDrop {
     width: 170px;
-    height: 60px;
+    height: 50px;
     min-width: 150px;
     color: #000 !important;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 7px !important;
     padding: 10px 15px !important;
-    
 }
 
-.headerWrapper .header .part2 .countryDrop{
+.headerWrapper .header .part2 .countryDrop {
     text-align: left;
     justify-content: flex-start !important;
-
 }
-.headerWrapper .header .part2 .countryDrop .label{
+
+.headerWrapper .header .part2 .countryDrop .label {
     font-size: 12px !important;
     text-transform: capitalize !important;
     color: rgba(0, 0, 0, 0.4) !important;
     line-height: 16px;
 }
-.headerWrapper .header .part2 .countryDrop .name{
+.headerWrapper .header .part2 .countryDrop .name {
     font-size: 14px !important;
     text-transform: capitalize !important;
     color: #233a95 !important;
     font-weight: 700;
     line-height: 16px;
 }
-.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
     opacity: 0.7;
 }
 .header .headerSearch {
     width: 60%;
-    height: 60%;
     background: #f3f4f7;
-    padding: 10px;
+    padding: 10px 20px; /* Adjust padding for more comfortable input space */
     position: relative;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
 }
-.header .headerSearch input{
+.header .headerSearch input {
     background: transparent !important;
     outline: none !important;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller font for refined look */
     color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 40%;
     border: 0px !important;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
-.header .headerSearch button{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    z-index: 100;
-    min-width: 40px !important;
-    height: 40px !important;
-    width: 40px !important;
+.header .headerSearch input::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Softer color for placeholder */
+}
+.header .headerSearch button {
+    color: #000;
     border-radius: 50% !important;
-    columns: #000;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.header .headerSearch button svg{
+
+.header .headerSearch button svg {
     font-size: 25px;
 }
-
-
-
-
-
