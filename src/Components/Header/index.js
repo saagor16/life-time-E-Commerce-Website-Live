@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png"
-import Button from '@mui/material/Button'
+
+import CountryDropdown from "../CountryDropdown";
 
 const Header = ()=>{
     return(
@@ -20,7 +21,7 @@ const Header = ()=>{
                             </div>
 
                             <div className="part2 d-flex align-items-center col-sm-10">
-                                <Button className="countryDrop"></Button>
+                               <CountryDropdown></CountryDropdown>
                             </div>
                         </div>
                     </div>
