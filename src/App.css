@@ -31,7 +31,7 @@ body {
 .headerWrapper .header .part2 .countryDrop {
     width: 170px;
     height: 50px;
-    min-width: 150px;
+    min-width: 170px;
     color: #000 !important;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 7px !important;
@@ -61,6 +61,7 @@ body {
 }
 .header .headerSearch {
     width: 60%;
+    height: 50px;
     background: #f3f4f7;
     padding: 10px 20px; /* Adjust padding for more comfortable input space */
     position: relative;
@@ -77,6 +78,7 @@ body {
     width: 100%;
     border: 0px !important;
     padding: 0px 10px;
+    height: 30px;
 }
 .header .headerSearch input::placeholder {
     color: rgba(0, 0, 0, 0.5); /* Softer color for placeholder */
@@ -95,3 +97,23 @@ body {
 .header .headerSearch button svg {
     font-size: 25px;
 }
+
+.header .part3 .circle{
+    align-items: center;
+    justify-content: center;
+    min-width: 50px !important;
+    height: 45px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #000;
+}
+.header .part3 .circle svg{
+    font-size: 22px;
+}
+
+
+
+
+
+

@@ -3,6 +3,7 @@ import Logo from "../../assets/images/logo.png";
 import Button from "@mui/material/Button";
 import CountryDropdown from "../CountryDropdown";
 import { IoSearch } from "react-icons/io5";
+import { FiUser } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -40,6 +41,12 @@ const Header = () => {
                     <IoSearch />
                   </Button>
                 </div>
+
+                {/* header search end bars */}
+                <div className="part3 d-flex align-items-center ml-auto">
+                    <Button className="circle"><FiUser></FiUser></Button>
+                </div>
+
               </div>
             </div>
           </div>
