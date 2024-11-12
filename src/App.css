@@ -8,6 +8,7 @@ body {
     background: #233a95;
 }
 
+
 .headerWrapper .top-strip {
     padding: 8px 0px;
     background-color: #4a4cb2; /* Subtle blue tone for top strip */
@@ -65,7 +66,7 @@ body {
     background: #f3f4f7;
     padding: 10px 20px; /* Adjust padding for more comfortable input space */
     position: relative;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -121,6 +122,16 @@ body {
 }
 .cartTab button svg{
    color: #ea2b0f !important;
+}
+.cartTab .count{
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    background: #ea2b0f;
+    border-radius: 50%;
+    color: #fff;
+    width: 20px;
+    height: 20px;
 }
 
 
