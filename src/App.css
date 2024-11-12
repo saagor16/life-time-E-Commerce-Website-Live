@@ -111,7 +111,17 @@ body {
 .header .part3 .circle svg{
     font-size: 22px;
 }
-
+.cartTab .price{
+    font-size: 18px;
+    font-weight: 800;
+    color:rgba(0, 0, 0, 0.8);
+}
+.cartTab button{
+    background: #fff1ee !important;
+}
+.cartTab button svg{
+   color: #ea2b0f !important;
+}
 
 
 

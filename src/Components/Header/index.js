@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import Button from "@mui/material/Button";
 import CountryDropdown from "../CountryDropdown";
-import { IoSearch } from "react-icons/io5";
+import { IoBagOutline, IoSearch } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 
 const Header = () => {
@@ -44,7 +44,11 @@ const Header = () => {
 
                 {/* header search end bars */}
                 <div className="part3 d-flex align-items-center ml-auto">
-                    <Button className="circle"><FiUser></FiUser></Button>
+                    <Button className="circle mr-3"><FiUser></FiUser></Button>
+                    <div className="ml-auto d-flex cartTab">
+                        <span className="price">$3.29</span>
+                        <Button className="circle ml-2"><IoBagOutline></IoBagOutline></Button>
+                    </div>
                 </div>
 
               </div>
