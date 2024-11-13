@@ -25,6 +25,68 @@ const CountryDropdown = () => {
             <IoIosSearch />
           </Button>
         </div>
+        <ul className="countryList mt-3">
+          <li>
+            <Button>Bangladesh</Button>
+          </li>
+          <li>
+            <Button>India</Button>
+          </li>
+          <li>
+            <Button>Sri Lanka</Button>
+          </li>
+          <li>
+            <Button>Saudi Arabia</Button>
+          </li>
+          <li>
+            <Button>Italy</Button>
+          </li>
+          <li>
+            <Button>United States</Button>
+          </li>
+          <li>
+            <Button>United Kingdom</Button>
+          </li>
+          <li>
+            <Button>Canada</Button>
+          </li>
+          <li>
+            <Button>Australia</Button>
+          </li>
+          <li>
+            <Button>Japan</Button>
+          </li>
+          <li>
+            <Button>Germany</Button>
+          </li>
+          <li>
+            <Button>France</Button>
+          </li>
+          <li>
+            <Button>China</Button>
+          </li>
+          <li>
+            <Button>Brazil</Button>
+          </li>
+          <li>
+            <Button>South Africa</Button>
+          </li>
+          <li>
+            <Button>Mexico</Button>
+          </li>
+          <li>
+            <Button>Russia</Button>
+          </li>
+          <li>
+            <Button>Spain</Button>
+          </li>
+          <li>
+            <Button>Netherlands</Button>
+          </li>
+          <li>
+            <Button>Argentina</Button>
+          </li>
+        </ul>
       </Dialog>
     </>
   );
