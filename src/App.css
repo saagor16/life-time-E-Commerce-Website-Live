@@ -139,6 +139,15 @@ body {
     height: 20px;
 }
 
+nav .navPart1{
+    max-width: 20%;
+    flex: 0 0 20%;
+}
+nav .navPart2{
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+
 nav .allCatTab{
     background: #2bbef9;
     padding: 10px 15px !important;
@@ -154,6 +163,7 @@ nav .allCatTab:hover{
 
 nav .allCatTab .text{
     font-weight: 600;
+
 }
 nav .allCatTab .icon1 svg{
     font-size: 20px !important;
