@@ -5,6 +5,7 @@ import CountryDropdown from "../CountryDropdown";
 import { IoBagOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import SearchBox from "./SearchBox";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
@@ -61,21 +62,7 @@ const Header = () => {
 
 
 
-      <nav>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-3 navPart1">
-              <Button className="allCatTab">
-                <span >ALL CATEGORIES</span>
-              </Button>
-            </div>
-
-            <div className="col-sm-9 navPart2">
-
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation></Navigation>
 
 
 
