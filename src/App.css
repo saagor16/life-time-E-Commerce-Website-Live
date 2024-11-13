@@ -65,7 +65,7 @@ body {
 .headerWrapper .header .part2 .countryDrop span.ml-auto svg {
     opacity: 0.7;
 }
-.header .headerSearch {
+.headerSearch {
     width: 60%;
     height: 50px;
     background: #f3f4f7;
@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
 }
-.header .headerSearch input {
+.headerSearch input {
     background: transparent !important;
     outline: none !important;
     font-size: 16px; /* Slightly smaller font for refined look */
@@ -86,10 +86,10 @@ body {
     padding: 0px 10px;
     height: 30px;
 }
-.header .headerSearch input::placeholder {
+.headerSearch input::placeholder {
     color: rgba(0, 0, 0, 0.5); /* Softer color for placeholder */
 }
-.header .headerSearch button {
+.headerSearch button {
     color: #000;
     border-radius: 50% !important;
     border: none;
@@ -100,7 +100,7 @@ body {
     justify-content: center;
 }
 
-.header .headerSearch button svg {
+.headerSearch button svg {
     font-size: 25px;
 }
 
@@ -138,6 +138,17 @@ body {
     width: 20px;
     height: 20px;
 }
+
+.locationModel .MuiPaper-elevation{
+    padding: 25px;
+}
+
+
+
+
+
+
+
 
 nav .navPart1{
     max-width: 20%;
