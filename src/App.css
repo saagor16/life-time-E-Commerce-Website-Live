@@ -161,6 +161,16 @@ nav .allCatTab .icon1 svg{
 nav .allCatTab .icon2 svg{
     font-size: 15px !important;
 }
+nav .navPart2 ul{
+    margin-bottom: 0px;
+}
+nav .navPart2 ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
 
 
 
