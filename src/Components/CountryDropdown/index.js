@@ -2,11 +2,14 @@ import Button from "@mui/material/Button";
 import { FaAngleDown } from "react-icons/fa6";
 import Dialog from "@mui/material/Dialog";
 import { IoIosSearch } from "react-icons/io";
+import { MdClose } from "react-icons/md";
+import { useState } from "react";
 
 const CountryDropdown = () => {
+  const [isOpenModel, setIsOpenModel] =useState(false)
   return (
     <>
-      <Button className="countryDrop">
+      <Button className="countryDrop" onClick={()=>setIsOpenModel(true)}>
         <div className="info d-flex flex-column">
           <span className="label">Your Location</span>
           <span className="name">Bangladesh</span>
@@ -16,9 +19,10 @@ const CountryDropdown = () => {
         </span>
       </Button>
 
-      <Dialog open={true} className="locationModel">
-        <h4>Choose your Delivery Location</h4>
+      <Dialog open={isOpenModel} onClose={()=>setIsOpenModel(false)} className="locationModel">
+        <h4 className="mb-0">Choose your Delivery Location</h4>
         <p>Enter your address and we will specify the offer for your area.</p>
+        <Button className="close_" onClick={()=>setIsOpenModel(false)}><MdClose></MdClose></Button>
         <div className="headerSearch w-100">
           <input type="text" placeholder="Search your area..." />
           <Button>
