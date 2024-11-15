@@ -243,7 +243,7 @@ nav .navPart2 ul li a button{
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    padding: 8px 15px;
+    padding: 8px 10px;
     transition: all 0.2s ease-in-out;
     border-radius: 25px;
 }

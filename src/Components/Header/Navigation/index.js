@@ -3,6 +3,12 @@ import { CiHome } from "react-icons/ci";
 import { FaAnglesDown } from "react-icons/fa6";
 import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { FaTshirt } from "react-icons/fa";
+import { MdOutlineElectricalServices } from "react-icons/md";
+import { GiCakeSlice } from "react-icons/gi";
+import { MdLocalGroceryStore } from "react-icons/md";
+import { FaBloggerB } from "react-icons/fa";
+import { MdContactMail } from "react-icons/md";
 
 const Navigation = () => {
   return (
@@ -24,25 +30,53 @@ const Navigation = () => {
           <div className="col-sm-10 navPart2 d-flex align-items-center">
             <ul className="list list-inline ml-auto">
               <li className="list-inline-item">
-                <Link to="/"><Button><CiHome></CiHome> &nbsp; Home</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <CiHome /> &nbsp; Home
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Fashion</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <FaTshirt /> &nbsp; Fashion
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Electronics</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <MdOutlineElectricalServices /> &nbsp; Electronics
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Bakery</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <GiCakeSlice /> &nbsp; Bakery
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Groceries</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <MdLocalGroceryStore /> &nbsp; Groceries
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Blog</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <FaBloggerB /> &nbsp; Blog
+                  </Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/"><Button>Contact Us</Button></Link>
+                <Link to="/">
+                  <Button>
+                    <MdContactMail /> &nbsp; Contact Us
+                  </Button>
+                </Link>
               </li>
             </ul>
           </div>
