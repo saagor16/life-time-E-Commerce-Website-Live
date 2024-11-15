@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "@mui/material/Button";
 import { FaAngleDown } from "react-icons/fa6";
 import Dialog from "@mui/material/Dialog";
@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import Slide from "@mui/material/Slide";
+import { MyContext } from "../../App";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -13,6 +14,15 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const CountryDropdown = () => {
   const [isOpenModel, setIsOpenModel] = useState(false);
+  const [selectedTab , setSelectedTab]=useState(null)
+
+  const context = useContext(MyContext);
+
+  const selectCountry=(index)=>{
+    setSelectedTab(index);
+    setIsOpenModel(false)
+  }
+
   return (
     <>
       <Button className="countryDrop" onClick={() => setIsOpenModel(true)}>
@@ -43,66 +53,14 @@ const CountryDropdown = () => {
           </Button>
         </div>
         <ul className="countryList mt-3">
-          <li onClick={() => setIsOpenModel(false)}>
-            <Button>Bangladesh</Button>
-          </li>
-          <li onClick={() => setIsOpenModel(false)}>
-            <Button>India</Button>
-          </li>
-          <li>
-            <Button>Sri Lanka</Button>
-          </li>
-          <li>
-            <Button>Saudi Arabia</Button>
-          </li>
-          <li>
-            <Button>Italy</Button>
-          </li>
-          <li>
-            <Button>United States</Button>
-          </li>
-          <li>
-            <Button>United Kingdom</Button>
-          </li>
-          <li>
-            <Button>Canada</Button>
-          </li>
-          <li>
-            <Button>Australia</Button>
-          </li>
-          <li>
-            <Button>Japan</Button>
-          </li>
-          <li>
-            <Button>Germany</Button>
-          </li>
-          <li>
-            <Button>France</Button>
-          </li>
-          <li>
-            <Button>China</Button>
-          </li>
-          <li>
-            <Button>Brazil</Button>
-          </li>
-          <li>
-            <Button>South Africa</Button>
-          </li>
-          <li>
-            <Button>Mexico</Button>
-          </li>
-          <li>
-            <Button>Russia</Button>
-          </li>
-          <li>
-            <Button>Spain</Button>
-          </li>
-          <li>
-            <Button>Netherlands</Button>
-          </li>
-          <li>
-            <Button>Argentina</Button>
-          </li>
+          {context.countryList?.length !== 0 &&
+            context.countryList?.map((item, index) => (
+              <li key={index} >
+                <Button onClick={() => selectCountry(index)}
+                  className={`${selectedTab === index ? 'active':''}`}
+                >{item.country}</Button>
+              </li>
+            ))}
         </ul>
       </Dialog>
     </>

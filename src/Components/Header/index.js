@@ -6,20 +6,24 @@ import { IoBagOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import SearchBox from "./SearchBox";
 import Navigation from "./Navigation";
+import { useContext } from "react";
+import { MyContext } from "../../App";
 
 const Header = () => {
+  const context = useContext(MyContext);
+
   return (
     <div className="headerWrapper">
       {/* Top Announcement Strip */}
       <div className="top-strip bg-blue">
         <div className="container">
           <p className="mb-0 mt-0 text-center">
-            Due to the <b>COVID-19</b> epidemic, orders may be processed with
-            a slight delay
+            Due to the <b>COVID-19</b> epidemic, orders may be processed with a
+            slight delay
           </p>
         </div>
       </div>
-      
+
       {/* Main Header Section */}
       <header className="header">
         <div className="container">
@@ -30,10 +34,10 @@ const Header = () => {
                 <img src={Logo} alt="Logo" />
               </Link>
             </div>
-            
+
             {/* Country Dropdown, Search Bar, and User/Cart Section */}
             <div className="part2 d-flex align-items-center col-sm-9">
-              <CountryDropdown />
+              {context.countryList.length !== 0 && <CountryDropdown />}
 
               {/* Header Search Bar */}
               <SearchBox></SearchBox>
@@ -60,16 +64,7 @@ const Header = () => {
         </div>
       </header>
 
-
-
       <Navigation></Navigation>
-
-
-
-
-
-
-
     </div>
   );
 };
