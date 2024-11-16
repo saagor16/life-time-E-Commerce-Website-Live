@@ -25,7 +25,10 @@ body {
     background: transparent !important;
 }
 
-
+.headerWrapper{
+    border-radius: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
 
 .headerWrapper .top-strip {
     padding: 8px 0px;
