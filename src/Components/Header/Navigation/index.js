@@ -1,14 +1,10 @@
 import Button from "@mui/material/Button";
-import { CiHome } from "react-icons/ci";
+import { FaChild, FaClock, FaFemale, FaGift, FaHome } from "react-icons/fa";
 import { FaAnglesDown } from "react-icons/fa6";
+import { GiClothes, GiLipstick } from "react-icons/gi";
 import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { FaTshirt } from "react-icons/fa";
-import { MdOutlineElectricalServices } from "react-icons/md";
-import { GiCakeSlice } from "react-icons/gi";
-import { MdLocalGroceryStore } from "react-icons/md";
-import { FaBloggerB } from "react-icons/fa";
-import { MdContactMail } from "react-icons/md";
+
 
 const Navigation = () => {
   return (
@@ -32,49 +28,63 @@ const Navigation = () => {
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    <CiHome /> &nbsp; Home
+                    <FaHome /> &nbsp; Home
                   </Button>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    <FaTshirt /> &nbsp; Fashion
+                    <GiClothes /> &nbsp; Men
+                  </Button>
+                </Link>
+                <div className="submenu shadow">
+                  <Link to='/'><Button>Clothing</Button></Link>
+                  <Link to='/'><Button>Footwear</Button></Link>
+                  <Link to='/'><Button>Watches</Button></Link>
+                  <Link to='/'><Button>Footwear</Button></Link>
+                  <Link to='/'><Button>Watches</Button></Link>
+                </div>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <Button>
+                    <FaFemale /> &nbsp; Women
+                  </Button>
+                </Link>
+                <div className="submenu shadow">
+                  <Link to='/'><Button>Clothing</Button></Link>
+                  <Link to='/'><Button>Footwear</Button></Link>
+                  <Link to='/'><Button>Watches</Button></Link>
+                  <Link to='/'><Button>Footwear</Button></Link>
+                  <Link to='/'><Button>Watches</Button></Link>
+                </div>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <Button>
+                    <GiLipstick /> &nbsp; Beauty
                   </Button>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    <MdOutlineElectricalServices /> &nbsp; Electronics
+                    <FaClock /> &nbsp; Watches
                   </Button>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    <GiCakeSlice /> &nbsp; Bakery
+                    <FaChild /> &nbsp; Kids
                   </Button>
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    <MdLocalGroceryStore /> &nbsp; Groceries
-                  </Button>
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <Button>
-                    <FaBloggerB /> &nbsp; Blog
-                  </Button>
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <Button>
-                    <MdContactMail /> &nbsp; Contact Us
+                    <FaGift /> &nbsp; Gift
                   </Button>
                 </Link>
               </li>
