@@ -7,7 +7,7 @@ import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(true);
+  const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(false);
 
   return (
     <nav>
