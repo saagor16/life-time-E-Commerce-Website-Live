@@ -4,23 +4,19 @@ import Slider from "react-slick";
 
 const HomeBanner = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows:true,
+    autoplay:true
   };
 
   return (
     <>
       <div className="homeBannerSection">
         <Slider {...settings}>
-          <div className="item">
-            <img
-              src="https://sslimages.shoppersstop.com/sys-master/root/h1e/h9b/32374912352286/Static-Web---2024-04--01-new-hp-page.jpg"
-              className="w-100"
-            ></img>
-          </div>
           <div className="item">
             <img
               src="https://sslimages.shoppersstop.com/sys-master/root/h98/h92/32015952117790/web_3093.jpg"
