@@ -1,6 +1,13 @@
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { FaChild, FaClock, FaFemale, FaGift, FaHome } from "react-icons/fa";
+import {
+  FaAngleRight,
+  FaChild,
+  FaClock,
+  FaFemale,
+  FaGift,
+  FaHome,
+} from "react-icons/fa";
 import { FaAnglesDown } from "react-icons/fa6";
 import { GiClothes, GiLipstick } from "react-icons/gi";
 import { IoIosMenu } from "react-icons/io";
@@ -27,20 +34,60 @@ const Navigation = () => {
                   <FaAnglesDown></FaAnglesDown>
                 </span>
               </Button>
-              <div className={`sidebarNav ${isOpenSidebarVal===true?'open':''}`}>
+              <div
+                className={`sidebarNav ${
+                  isOpenSidebarVal === true ? "open" : ""
+                }`}
+              >
                 <ul>
                   <li>
                     <Link to="/">
                       <Button>
                         <GiClothes /> &nbsp; Men
+                        <FaAngleRight className="ml-auto"></FaAngleRight>
                       </Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>Clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Watches</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
                       <Button>
                         <FaFemale /> &nbsp; Women
+                        <FaAngleRight className="ml-auto"></FaAngleRight>
                       </Button>
+                      <div className="submenu">
+                        <Link to="/">
+                          <Button>Clothing</Button>
+                        </Link>
+                        <Link to="/">
+                          <Button>Footwear</Button>
+                        </Link>
+                        <Link to="/">
+                          <Button>Watches</Button>
+                        </Link>
+                        <Link to="/">
+                          <Button>Footwear</Button>
+                        </Link>
+                        <Link to="/">
+                          <Button>Watches</Button>
+                        </Link>
+                      </div>
                     </Link>
                   </li>
                   <li>

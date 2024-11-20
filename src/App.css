@@ -235,7 +235,7 @@ nav .navPart1 .catWrapper .sidebarNav.open{
 nav .navPart1 .catWrapper .sidebarNav ul li{
     width: 100%;
     list-style: none;
-    padding:0px 15px;
+    padding:0px 10px;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button{
     color: #000;
@@ -243,9 +243,47 @@ nav .navPart1 .catWrapper .sidebarNav ul li button{
     justify-content: flex-start;
     text-transform: capitalize !important;
 }
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+
+
+
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
     background: transparent !important;
 }
+
+nav .navPart1 .catWrapper .sidebarNav ul li{
+    position: static;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+    position: absolute;
+    top: 0px;
+    left: 105%;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+    left: 100%;
+  
+}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
+    border-radius: 0px !important;
+}
+
+
+
 
 
 
