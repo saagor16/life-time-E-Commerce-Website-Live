@@ -6,6 +6,7 @@
 body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
 }
 .bg-blue {
     background: #233a95;
@@ -16,6 +17,17 @@ body {
         max-width: 1200px;
     } 
 }
+
+.cursor{
+    cursor: pointer;
+}
+.text-light{
+    color: #8b8b8b !important;
+}
+.text-sml{
+    font-size: 14px;
+}
+
 
 ::-webkit-scrollbar{
     width: 8px !important;
@@ -407,6 +419,28 @@ nav .navPart2 ul li:hover .submenu{
     font-family: FontAwesome !important;
     color: #fff;
 }
+
+.homeProducts{
+    padding: 25px 0px;
+    width: 100%;
+}
+.homeProducts .banner{
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.productRow .hd{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
 
 
 
