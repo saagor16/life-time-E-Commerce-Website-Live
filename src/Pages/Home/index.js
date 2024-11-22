@@ -1,4 +1,7 @@
+import Button from "@mui/material/Button";
 import HomeBanner from "../../Components/HomeBanner";
+import banner1 from '../../assets/images/banner1.jpg'
+import { IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {
   return (
@@ -11,8 +14,8 @@ const Home = () => {
             <div className="col-md-3">
               <div className="banner">
                 <img
-                  src="	https://res.cloudinary.com/dkgonwhvj/image/upload/v1731428306/1731428304529_New_Project_34.jpg"
-                  className="cursor"
+                  src={banner1}
+                  className="cursor w-100"
                   alt=""
                 />
               </div>
@@ -26,6 +29,9 @@ const Home = () => {
                     Do not miss the current offers until the end of March.
                   </p>
                 </div>
+
+
+                <Button className="viewAllBtn">View All<IoIosArrowForward></IoIosArrowForward></Button>
               </div>
             </div>
           </div>

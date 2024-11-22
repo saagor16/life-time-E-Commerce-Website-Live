@@ -434,8 +434,17 @@ nav .navPart2 ul li:hover .submenu{
     font-weight: 600;
 }
 
-
-
+.viewAllBtn{
+    padding: 5px 25px !important;
+    background: #414141;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 30px !important;
+    color: #000 !important;
+    font-weight: 600;
+}
+.viewAllBtn svg{
+    font-size: 20px;
+}
 
 
 
