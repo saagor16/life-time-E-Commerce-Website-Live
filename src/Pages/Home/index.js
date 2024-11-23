@@ -41,7 +41,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="product_row w-100">
+              <div className="product_row w-100 mt-4">
                 <Slider {...productSliderOptions}>
                   <div className="item productItem">
                     <div className="imgWrapper">
