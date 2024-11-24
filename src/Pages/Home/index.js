@@ -4,13 +4,12 @@ import banner1 from "../../assets/images/banner1.jpg";
 import { IoIosArrowForward } from "react-icons/io";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Rating from '@mui/material/Rating';
-
+import Rating from "@mui/material/Rating";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const Home = () => {
@@ -70,8 +69,13 @@ const Home = () => {
                       </div>
                       <h4>Weathers Original Caramel Hard Candies</h4>
                       <span className="text-danger d-block">In Stock</span>
-                      <Rating name="read-only" value={5} readOnly size="small" precision={0.5}/>
-
+                      <Rating
+                        name="read-only"
+                        value={5}
+                        readOnly
+                        size="small"
+                        precision={0.5}
+                      />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
