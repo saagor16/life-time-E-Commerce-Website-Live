@@ -61,6 +61,26 @@ const Home = () => {
                   <SwiperSlide>
                     <ProductItem></ProductItem>
                   </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>
