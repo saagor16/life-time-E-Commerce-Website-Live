@@ -66,6 +66,7 @@ const Home = () => {
                           alt=""
                           className="w-100"
                         />
+                        <span className="badge badge-primary">20%</span>
                       </div>
                       <div className="info">
                         <h4>Weathers Original Caramel Hard Candies</h4>
@@ -80,7 +81,9 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -107,7 +110,9 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -134,7 +139,9 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -161,7 +168,9 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -188,7 +197,9 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -215,12 +226,13 @@ const Home = () => {
                         />
                         <div className="d-flex">
                           <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$15.00</span>
+                          <span className="netPrice text-danger ml-2">
+                            $15.00
+                          </span>
                         </div>
                       </div>
                     </div>
                   </SwiperSlide>
-                  
                 </Swiper>
               </div>
             </div>
