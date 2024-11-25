@@ -83,6 +83,56 @@ const Home = () => {
                   </SwiperSlide>
                 </Swiper>
               </div>
+
+
+              <div className="d-flex align-item-center mt-5">
+                <div className="info w-75">
+                  <h3 className="mb-0 hd">NEW PRODUCTS</h3>
+                  <p className="text-light text-sml mb-0">
+                    New product with update stocks
+                  </p>
+                </div>
+
+                <Button className="viewAllBtn">
+                  View All<IoIosArrowForward></IoIosArrowForward>
+                </Button>
+              </div>
+
+              <div className="product_row w-100 mt-4">
+                <Swiper
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>
