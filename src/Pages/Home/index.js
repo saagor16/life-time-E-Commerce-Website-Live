@@ -51,7 +51,7 @@ const Home = () => {
               <div className="product_row w-100 mt-4">
                 <Swiper
                   slidesPerView={4}
-                  spaceBetween={30}
+                  spaceBetween={0}
                   pagination={{
                     clickable: true,
                   }}
@@ -67,25 +67,21 @@ const Home = () => {
                           className="w-100"
                         />
                       </div>
-                      <h4>Weathers Original Caramel Hard Candies</h4>
-                      <span className="text-danger d-block">In Stock</span>
-                      <Rating
-                        name="read-only"
-                        value={5}
-                        readOnly
-                        size="small"
-                        precision={0.5}
-                      />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          alt=""
-                          className="w-100"
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
                         />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -98,16 +94,21 @@ const Home = () => {
                           className="w-100"
                         />
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          alt=""
-                          className="w-100"
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
                         />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -120,6 +121,22 @@ const Home = () => {
                           className="w-100"
                         />
                       </div>
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
+                        />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
+                      </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
@@ -131,8 +148,79 @@ const Home = () => {
                           className="w-100"
                         />
                       </div>
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
+                        />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
+                      </div>
                     </div>
                   </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
+                        />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                      <div className="info">
+                        <h4>Weathers Original Caramel Hard Candies</h4>
+                        <span className="text-danger d-block">In Stock</span>
+                        <Rating
+                          className="mt-2 mb-2"
+                          name="read-only"
+                          value={5}
+                          readOnly
+                          size="small"
+                          precision={0.5}
+                        />
+                        <div className="d-flex">
+                          <span className="oldPrice">$20.00</span>
+                          <span className="netPrice text-danger ml-2">$15.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  
                 </Swiper>
               </div>
             </div>

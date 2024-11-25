@@ -449,10 +449,34 @@ nav .navPart2 ul li:hover .submenu{
     width: 100%;
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
-
-
-
+.productItem .info{
+    padding: 15px;
+}
+.productItem .info h4{
+    font-size: 15px;
+    font-weight: 800;
+}
+.productItem .info .oldPrice{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    text-decoration: line-through;
+}
+.productItem .info .netPrice{
+    font-size: 16px;
+    font-weight: bold;
+}
+.product_row .productItem{
+    border-radius: 1px solid transparent !important;
+}
+.product_row .swiper-slider:last-child .productItem{
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+swiper-slider{
+    padding-right: 1px;
+}
 
 
 
