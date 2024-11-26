@@ -539,8 +539,19 @@ nav .navPart2 ul li:hover .submenu{
 .badge-primary{
     background:#2bbef9 !important ;
 }
-
-
+.homeCat{
+    padding: 35px 0px;
+}
+.homeCat .swiper .item{
+    padding: 15px;
+    width: 100%;
+    height:auto;
+    background: #feefea;
+    border-radius: 10px;
+}
+.homeCat .swiper .item img{
+    width: 80%;
+}
 
 
 

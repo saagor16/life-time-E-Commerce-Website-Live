@@ -13,7 +13,7 @@ const HomeCat = () => {
         <div className="container">
           <Swiper
             slidesPerView={10}
-            spaceBetween={20}
+            spaceBetween={8}
             navigation={true}
             pagination={{
               clickable: true,
