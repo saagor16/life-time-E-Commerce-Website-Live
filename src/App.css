@@ -430,9 +430,10 @@ nav .navPart2 ul li:hover .submenu{
     border-radius: 7px;
     overflow: hidden;
 }
-.productRow .hd{
+.hd{
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .viewAllBtn{
@@ -542,16 +543,34 @@ nav .navPart2 ul li:hover .submenu{
 .homeCat{
     padding: 35px 0px;
 }
+.homeCat .swiper{
+    overflow: inherit !important;
+}
 .homeCat .swiper .item{
     padding: 15px;
     width: 100%;
     height:auto;
-    background: #feefea;
     border-radius: 10px;
 }
 .homeCat .swiper .item img{
     width: 80%;
 }
+.homeCat .swiper-button-prev, .homeCat .swiper-button-next{
+    top: -30px;
+    width: 30px !important;
+    height: 30px !important;
+}
+.homeCat .swiper-button-prev{
+    right: 68px !important;
+    left: inherit !important;
+}
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
+    font-size: 12px !important;
+}
+
+
+
+
 
 
 
