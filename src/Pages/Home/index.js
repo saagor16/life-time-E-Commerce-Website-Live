@@ -14,6 +14,7 @@ import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
 import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
+import newsLetterImg from "../../assets/images/newsLetterImg.png";
 
 const Home = () => {
   return (
@@ -133,7 +134,9 @@ const Home = () => {
               <br/> promotions and coupons.</p>
             </div>
 
-            <div className="col-md-6"></div>
+            <div className="col-md-6">
+              <img alt="" src={newsLetterImg}></img>
+            </div>
           </div>
         </div>
       </section>
