@@ -573,11 +573,13 @@ nav .navPart2 ul li:hover .submenu{
     gap: 10px;
 }
 .productRow2 .productItem{
-    width: 23%;
+    width: 24%;
     overflow: hidden;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+.bannerSec{
+    gap: 10px;
+}
 
 
 
