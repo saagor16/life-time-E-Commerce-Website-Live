@@ -15,6 +15,7 @@ import HomeCat from "../../Components/HomeCat";
 import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
 import newsLetterImg from "../../assets/images/newsLetterImg.png";
+import { IoMailOutline } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -132,6 +133,12 @@ const Home = () => {
               <h3 className="text-white">Join our newsletter and get...</h3>
               <p className="text-light">Join our email subscription now  to get  updates on
               <br/> promotions and coupons.</p>
+
+              <form>
+                <IoMailOutline></IoMailOutline>
+                <input type="text" placeholder="Your Email Address"></input>
+                <Button>Subscribe</Button>
+              </form>
             </div>
 
             <div className="col-md-6">
@@ -140,6 +147,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+      <br/><br/><br/><br/><br/><br/><br/><br/>
     </>
   );
 };
