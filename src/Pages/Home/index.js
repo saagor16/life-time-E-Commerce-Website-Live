@@ -123,10 +123,15 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="newsLetterSection">
+      <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
         <div className="container">
           <div className="row">
-            <div className="col-md-6"></div>
+            <div className="col-md-6">
+              <p className="text-white mb-0">$20 discount for your first order</p>
+              <h3 className="text-white">Join our newsletter and get...</h3>
+              <p className="text-light">Join our email subscription now  to get  updates on
+              <br/> promotions and coupons.</p>
+            </div>
 
             <div className="col-md-6"></div>
           </div>
