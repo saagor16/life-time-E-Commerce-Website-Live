@@ -580,7 +580,11 @@ nav .navPart2 ul li:hover .submenu{
 .bannerSec{
     gap: 10px;
 }
-
+.sticky{
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
 
 
 
