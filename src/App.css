@@ -7,6 +7,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
 }
 .bg-blue {
     background: #233a95;
@@ -567,7 +568,15 @@ nav .navPart2 ul li:hover .submenu{
 .homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
     font-size: 12px !important;
 }
-
+.productRow2 {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.productRow2 .productItem{
+    width: 23%;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 
 
