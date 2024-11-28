@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row mt-4">
+        <div className="row mt-5 linksWrap">
           <div className="col">
             <h5>FRUIT & VEGETABLES</h5>
             <ul>
