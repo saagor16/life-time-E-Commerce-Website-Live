@@ -649,7 +649,13 @@ nav .navPart2 ul li:hover .submenu{
     font-weight: 600 !important;
     text-transform: capitalize !important;
 }
-
+footer{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 35px 0px;
+}
 
 
 

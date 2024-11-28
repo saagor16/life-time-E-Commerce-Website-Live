@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -6,6 +7,7 @@ import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
+import Footer from "./Components/Footer";
 
 const MyContext = createContext();
 
@@ -36,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" exact={true} Component={Home}></Route>
         </Routes>
+        <Footer></Footer>
       </MyContext.Provider>
     </BrowserRouter>
   );

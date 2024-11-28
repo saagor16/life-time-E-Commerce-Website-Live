@@ -149,7 +149,7 @@ const Home = () => {
       </section>
 
 
-      <br/><br/><br/><br/><br/><br/><br/><br/>
+      
     </>
   );
 };
