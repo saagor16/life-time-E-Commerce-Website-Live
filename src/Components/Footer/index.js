@@ -1,4 +1,5 @@
 import { CiBadgeDollar } from "react-icons/ci";
+import { FaFacebook, FaInstagram,  FaTwitter } from "react-icons/fa";
 import { LuShirt } from "react-icons/lu";
 import { TbDisabled2, TbTruckDelivery } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -172,6 +173,24 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+
+        <div className="copyright mt-3 pt-2 pb-3 d-flex">
+          <p className="mb-0">Copyright 2024. All rights reserved</p>
+          <ul className="list list-inline ml-auto mb-0">
+            <li className="list-inline-item">
+              <Link to='/'><FaFacebook></FaFacebook></Link>
+            </li>
+
+            <li className="list-inline-item">
+              <Link to='/'><FaTwitter></FaTwitter></Link>
+            </li>
+
+            <li className="list-inline-item">
+              <Link to='/'><FaInstagram></FaInstagram></Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
