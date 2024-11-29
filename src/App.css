@@ -26,6 +26,21 @@ body {
     background: #e5f8ed !important;
     color: #16b858 !important;
 }
+.btn-blue{
+    background: #233a95 !important;
+    color: #fff !important;
+    text-transform: capitalize;
+}
+.btn-big{
+    font-size: 15px !important;
+    padding: 7px 20px !important;
+    min-width: auto !important;
+}
+.btn-round{
+    border-radius: 30px !important;
+}
+
+
 
 .cursor{
     cursor: pointer;
