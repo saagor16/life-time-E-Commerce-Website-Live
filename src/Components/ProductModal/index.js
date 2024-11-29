@@ -31,11 +31,10 @@ const ProductModal = (props) => {
     arrows: false,
   };
 
-  const goto =(index)=>{
+  const goto = (index) => {
     zoomSlider.current.slickGoTo(index);
     zoomSliderBig.current.slickGoTo(index);
-  }
-
+  };
 
   return (
     <>
@@ -112,7 +111,7 @@ const ProductModal = (props) => {
                   src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
                   className="w-100"
                   alt=""
-                  onClick={()=>goto(0)}
+                  onClick={() => goto(0)}
                 ></img>
               </div>
 
@@ -121,7 +120,7 @@ const ProductModal = (props) => {
                   src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427356/1731427353236_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-2-202401240757.webp"
                   className="w-100"
                   alt=""
-                  onClick={()=>goto(1)}
+                  onClick={() => goto(1)}
                 ></img>
               </div>
 
@@ -130,7 +129,7 @@ const ProductModal = (props) => {
                   src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
                   className="w-100"
                   alt=""
-                  onClick={()=>goto(2)}
+                  onClick={() => goto(2)}
                 ></img>
               </div>
             </Slider>
@@ -142,6 +141,12 @@ const ProductModal = (props) => {
               <span className="netPrice text-danger lg">$6.35</span>
             </div>
             <span className="badge bg-success">IN STOCK</span>
+            <p className="mt-3">
+              Rs: Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book.
+            </p>
           </div>
         </div>
       </Dialog>
