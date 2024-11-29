@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import Dialog from "@mui/material/Dialog";
 import { MdClose, MdOutlineCompareArrows } from "react-icons/md";
 import Rating from "@mui/material/Rating";
@@ -8,11 +8,14 @@ import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import QuantityBox from "../QuantityBox";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { MyContext } from "../../App";
 
 
 const ProductModal = (props) => {
   const zoomSliderBig = useRef();
   const zoomSlider = useRef();
+
+  const context=useContext(MyContext)
 
   var settings = {
     dots: false,
@@ -44,10 +47,10 @@ const ProductModal = (props) => {
       <Dialog
         open={true}
         className="productModal"
-        onClose={() => props.closeProductModal()}
+        onClose={()=>context.setIsOpenProductModal(false)}
       >
         <Button className="close_">
-          <MdClose onClick={() => props.closeProductModal()}></MdClose>
+          <MdClose onClick={()=>context.setIsOpenProductModal(false)}></MdClose>
         </Button>
 
         <h4 className="mb-1 font-weight-bold">
