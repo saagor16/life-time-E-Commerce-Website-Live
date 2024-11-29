@@ -1,12 +1,13 @@
 import Button from "@mui/material/Button";
 import React, { useRef } from "react";
 import Dialog from "@mui/material/Dialog";
-import { MdClose } from "react-icons/md";
+import { MdClose, MdOutlineCompareArrows } from "react-icons/md";
 import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import QuantityBox from "../QuantityBox";
+import { IoIosHeartEmpty } from "react-icons/io";
 
 
 const ProductModal = (props) => {
@@ -154,6 +155,11 @@ const ProductModal = (props) => {
             <div className="d-flex align-items-center">
               <QuantityBox></QuantityBox>
               <Button className="btn-blue btn-lg btn-big btn-round ml-3">Add to cart</Button>
+            </div>
+
+            <div className="d-flex align-items-center mt-5 actions">
+              <Button className="btn-round btn-sml" variant="outlined"><IoIosHeartEmpty></IoIosHeartEmpty> &nbsp; ADD TO WISHLIST</Button>
+              <Button className="btn-round btn-sml ml-3" variant="outlined"><MdOutlineCompareArrows></MdOutlineCompareArrows> &nbsp;COMPARE</Button>
             </div>
           </div>
         </div>
