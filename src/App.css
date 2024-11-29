@@ -18,6 +18,14 @@ body {
         max-width: 1200px;
     } 
 }
+.badge{
+    display: inline-block;
+    padding: 7px 10px;
+}
+.badge.bg-success{
+    background: #e5f8ed !important;
+    color: #16b858 !important;
+}
 
 .cursor{
     cursor: pointer;
@@ -737,7 +745,6 @@ footer .copyright ul li a:hover svg{
 .productZoom{
     width: 100%;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0px;
     overflow: hidden;
     border-radius: 15px;
