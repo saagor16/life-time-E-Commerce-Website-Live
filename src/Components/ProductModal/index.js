@@ -2,6 +2,7 @@ import Button from "@mui/material/Button";
 import React from "react";
 import Dialog from "@mui/material/Dialog";
 import { MdClose } from "react-icons/md";
+import Rating from '@mui/material/Rating';
 
 const ProductModal = (props) => {
   return (
@@ -23,6 +24,8 @@ const ProductModal = (props) => {
             <span>Brands:</span>
             <span className="ml-2">Welch</span>
           </div>
+          <Rating name="read-only" value={5} readOnly />
+
         </div>
       </Dialog>
     </>
