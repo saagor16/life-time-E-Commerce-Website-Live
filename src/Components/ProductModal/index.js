@@ -4,26 +4,39 @@ import Dialog from "@mui/material/Dialog";
 import { MdClose } from "react-icons/md";
 import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
-import InnerImageZoom from 'react-inner-image-zoom';
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
-
-
+import InnerImageZoom from "react-inner-image-zoom";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 
 const ProductModal = (props) => {
+  const zoomSliderBig = useRef();
+  const zoomSlider = useRef();
 
-  const zoomSliderBig=useRef();
-  const zoomSlider=useRef();
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: true,
+  };
 
+  var settings2 = {
+    dots: false,
+    infinite: false,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: false,
+  };
 
-  var settings2 ={
-    dots:false,
-    infinite:false,
-    speed:700,
-    slidesToShow:1,
-    slidesToScroll:1,
-    fade:false,
-    arrows:false,
+  const goto =(index)=>{
+    zoomSlider.current.slickGoTo(index);
+    zoomSliderBig.current.slickGoTo(index);
   }
+
+
   return (
     <>
       <Dialog
@@ -60,20 +73,67 @@ const ProductModal = (props) => {
             <div className="productZoom">
               <Slider
                 {...settings2}
-                className="zoomSliderBir"
+                className="zoomSliderBig"
                 ref={zoomSliderBig}
               >
-                 <div className="item">
-                        <InnerImageZoom
-                          zoomType="hover"
-                          zoomScale={1}
-                          src={
-                            "https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
-                          }
-                        ></InnerImageZoom>
-                      </div>
+                <div className="item">
+                  <InnerImageZoom
+                    zoomType="hover"
+                    zoomScale={1}
+                    src={
+                      "https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
+                    }
+                  ></InnerImageZoom>
+                </div>
+                <div className="item">
+                  <InnerImageZoom
+                    zoomType="hover"
+                    zoomScale={1}
+                    src={
+                      "https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427356/1731427353236_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-2-202401240757.webp"
+                    }
+                  ></InnerImageZoom>
+                </div>
+                <div className="item">
+                  <InnerImageZoom
+                    zoomType="hover"
+                    zoomScale={1}
+                    src={
+                      "https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
+                    }
+                  ></InnerImageZoom>
+                </div>
               </Slider>
             </div>
+
+            <Slider {...settings} className="zoomSlider" ref={zoomSlider}>
+              <div className="item">
+                <img
+                  src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
+                  className="w-100"
+                  alt=""
+                  onClick={()=>goto(0)}
+                ></img>
+              </div>
+
+              <div className="item">
+                <img
+                  src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427356/1731427353236_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-2-202401240757.webp"
+                  className="w-100"
+                  alt=""
+                  onClick={()=>goto(1)}
+                ></img>
+              </div>
+
+              <div className="item">
+                <img
+                  src="https://res.cloudinary.com/dkgonwhvj/image/upload/v1731427355/1731427353235_noise-alt-lit-smartwatch-berry-blue-digital-o494352052-p607510006-0-202401240757.webp"
+                  className="w-100"
+                  alt=""
+                  onClick={()=>goto(2)}
+                ></img>
+              </div>
+            </Slider>
           </div>
 
           <div className="col-md-7"></div>
