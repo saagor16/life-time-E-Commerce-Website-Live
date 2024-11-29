@@ -136,7 +136,12 @@ const ProductModal = (props) => {
             </Slider>
           </div>
 
-          <div className="col-md-7"></div>
+          <div className="col-md-7">
+            <div className="d-flex info align-items-center">
+              <span className="oldPrice lg mr-2">$9.35</span>
+              <span className="netPrice text-danger lg">$6.35</span>
+            </div>
+          </div>
         </div>
       </Dialog>
     </>
