@@ -6,6 +6,7 @@ import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import { FaMinus, FaPlus } from "react-icons/fa6";
 
 const ProductModal = (props) => {
   const zoomSliderBig = useRef();
@@ -151,10 +152,12 @@ const ProductModal = (props) => {
 
             <div className="d-flex align-items-center">
               <div className="quantityDrop d-flex align-items-center">
-
+                    <Button><FaMinus></FaMinus></Button>
+                    <input text="text"></input>
+                    <Button><FaPlus></FaPlus></Button>
               </div>
 
-              <Button className="btn-blue btn-lg btn-big btn-round">Add to cart</Button>
+              <Button className="btn-blue btn-lg btn-big btn-round ml-3">Add to cart</Button>
             </div>
           </div>
         </div>
