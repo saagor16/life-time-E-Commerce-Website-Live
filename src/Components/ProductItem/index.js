@@ -3,8 +3,22 @@ import Button from "@mui/material/Button";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { TfiFullscreen } from "react-icons/tfi";
 import ProductModal from "../ProductModal";
+import {useState} from 'react'
 
 const ProductItem = () => {
+
+  const[isOpenProductModal,setIsOpenProductModal]=useState(false)
+
+  const viewProductDetails =(id)=>{
+    setIsOpenProductModal(true);
+  }
+  const closeProductModal=()=>{
+    setIsOpenProductModal(false);
+
+  }
+
+
+
   return (
     <>
       <div className="item productItem">
@@ -17,7 +31,7 @@ const ProductItem = () => {
           <span className="badge badge-primary">20%</span>
 
           <div className="actions">
-            <Button><TfiFullscreen></TfiFullscreen></Button>
+            <Button onClick={()=>viewProductDetails(1)}><TfiFullscreen></TfiFullscreen></Button>
             <Button><IoMdHeartEmpty></IoMdHeartEmpty></Button>
           </div>
         </div>
@@ -39,7 +53,12 @@ const ProductItem = () => {
         </div>
       </div>
 
-      <ProductModal></ProductModal>
+
+
+      {
+        isOpenProductModal===true && <ProductModal closeProductModal={closeProductModal}></ProductModal>
+      }
+
     </>
   );
 };
