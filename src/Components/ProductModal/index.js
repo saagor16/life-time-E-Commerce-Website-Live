@@ -72,7 +72,8 @@ const ProductModal = (props) => {
 
         <div className="row mt-2 productDetailsMOdel">
           <div className="col-md-5">
-            <div className="productZoom">
+            <div className="productZoom position-relative">
+              <div className="badge badge-primary">23%</div>
               <Slider
                 {...settings2}
                 className="zoomSliderBig"
