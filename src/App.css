@@ -197,7 +197,7 @@ body {
 .locationModel .countryList li button.active{
     background: #ccc !important;
 }
-.locationModel .close_{
+.close_{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -207,7 +207,7 @@ body {
     height: 40px !important;
     border-radius: 50% !important;
 }
-.locationModel .close_ svg{
+.close_ svg{
     font-size: 22px;
 }
 

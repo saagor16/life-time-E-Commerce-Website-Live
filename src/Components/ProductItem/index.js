@@ -2,6 +2,7 @@ import { Rating } from "@mui/material";
 import Button from "@mui/material/Button";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { TfiFullscreen } from "react-icons/tfi";
+import ProductModal from "../ProductModal";
 
 const ProductItem = () => {
   return (
@@ -37,6 +38,8 @@ const ProductItem = () => {
           </div>
         </div>
       </div>
+
+      <ProductModal></ProductModal>
     </>
   );
 };
