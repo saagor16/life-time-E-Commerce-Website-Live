@@ -121,7 +121,7 @@ button{
 .headerWrapper .header .part2 .countryDrop .name {
     font-size: 14px !important;
     text-transform: capitalize !important;
-    color: #233a95 !important;
+    color: #6a4aae !important;
     font-weight: 700;
     line-height: 16px;
 }
@@ -632,7 +632,7 @@ nav .navPart2 ul li:hover .submenu{
 .newsLetterSection{
     width: 100%;
     height: auto;
-    background: #233a95;
+    background-image: linear-gradient(to bottom right, #7a55c1 ,#7a55c1);
     position: relative;
     overflow: hidden;
     padding: 70px 0px;
@@ -686,7 +686,7 @@ nav .navPart2 ul li:hover .submenu{
     position: absolute;
     top: 6px;
     right: 7px;
-    background: #233a95 !important;
+    background: #6a4aae !important;
     font-size: 14px !important;
     padding: 12px 25px !important;
     color: #fff  !important;
