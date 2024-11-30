@@ -298,6 +298,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li button svg{
 
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
     background: transparent !important;
+    color: #6a4aae !important;
 }
 
 nav .navPart1 .catWrapper .sidebarNav ul li{
@@ -746,10 +747,10 @@ footer .copyright ul li a{
 }
 footer .copyright ul li svg{
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.8);
+    color: #6a4aae;
 }
 footer .copyright ul li a:hover{
-    background: #2bbef9 !important;
+    background: #6a4aae !important;
 }
 footer .copyright ul li a:hover svg{
     color: #fff !important;
