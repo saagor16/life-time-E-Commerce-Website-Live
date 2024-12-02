@@ -1,9 +1,13 @@
 
 const Listing = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+           <section className="product_Listing_Page">
+            <div className="container">
+                
+            </div>
+           </section>
+        </>
     );
 };
 
