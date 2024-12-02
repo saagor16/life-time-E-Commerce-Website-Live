@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import { MdClose, MdOutlineCompareArrows } from "react-icons/md";
 import Rating from "@mui/material/Rating";
